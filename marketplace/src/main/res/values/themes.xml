@@ -1,0 +1,7 @@
+<resources>
+
+    <!--<style name="Theme.Marketplace" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorControlActivated">@color/mp_stroke_color</item>
+&lt;!&ndash;        <item name="android:windowTranslucentStatus">true</item>&ndash;&gt;
+    </style>-->
+</resources>

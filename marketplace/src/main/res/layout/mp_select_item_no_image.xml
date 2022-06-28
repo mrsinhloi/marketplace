@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded_border_1">
+
+    <LinearLayout
+        android:id="@+id/mpItemAdd"
+        android:clickable="true"
+        android:layout_width="160dp"
+        android:layout_margin="@dimen/mp_padding_small"
+        android:layout_height="@dimen/mp_photo_height"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/mp_padding_start"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/mp_corner_radius"
+            android:src="@drawable/ic_round_add_photo_alternate_24" />
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mp_add_photo" />
+    </LinearLayout>
+</FrameLayout>

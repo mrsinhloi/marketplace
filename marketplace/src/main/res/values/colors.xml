@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mp_stroke_color">#9D0B0F</color>
+    <color name="mp_stroke_error_color">#e51c23</color>
+    <color name="mp_grey">#616161</color>
+    <color name="mp_black_alpha">#A0000000</color>
+</resources>

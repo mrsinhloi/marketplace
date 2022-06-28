@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="mpTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:textColor">@android:color/black</item>
+        <item name="boxStrokeColor">@color/mp_stroke_color</item>
+        <item name="hintTextColor">@color/mp_stroke_color</item>
+        <item name="endIconTint">@color/mp_stroke_color</item>
+        <item name="boxStrokeErrorColor">@color/mp_stroke_error_color</item>
+        <item name="errorIconTint">@color/mp_stroke_error_color</item>
+        <item name="errorTextColor">@color/mp_stroke_error_color</item>
+
+
+        <item name="boxStrokeWidth">@dimen/mp_stroke_width</item>
+        <item name="boxStrokeWidthFocused">@dimen/mp_stroke_width</item>
+        <item name="endIconMode">clear_text</item>
+
+
+        <item name="android:layout_marginStart">@dimen/mp_padding_start</item>
+        <item name="android:layout_marginEnd">@dimen/mp_padding_start</item>
+        <item name="android:layout_marginTop">@dimen/mp_padding_top</item>
+        <item name="android:layout_marginBottom">@dimen/mp_padding_top</item>
+
+    </style>
+
+    <style name="mpTextDropdown" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:textColor">@android:color/black</item>
+        <item name="boxStrokeColor">@color/mp_stroke_color</item>
+        <item name="hintTextColor">@color/mp_stroke_color</item>
+        <item name="endIconTint">@color/mp_stroke_color</item>
+        <item name="boxStrokeErrorColor">@color/mp_stroke_error_color</item>
+        <item name="errorIconTint">@color/mp_stroke_error_color</item>
+        <item name="errorTextColor">@color/mp_stroke_error_color</item>
+
+        <item name="boxStrokeWidth">@dimen/mp_stroke_width</item>
+        <item name="boxStrokeWidthFocused">@dimen/mp_stroke_width</item>
+
+        <item name="android:layout_marginStart">@dimen/mp_padding_start</item>
+        <item name="android:layout_marginEnd">@dimen/mp_padding_start</item>
+        <item name="android:layout_marginTop">@dimen/mp_padding_top</item>
+        <item name="android:layout_marginBottom">@dimen/mp_padding_top</item>
+
+    </style>
+
+    <style name="mpToolbarStyle" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="navigationIcon">@drawable/mp_ic_back</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="titleTextColor">@android:color/black</item>
+        <item name="titleCentered">true</item>
+    </style>
+
+    <style name="mpEditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:inputType">textCapSentences</item>
+    </style>
+
+
+    <!--<style name="BottomSheetDialogStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/bottomSheetBackground</item>
+    </style>
+
+    <style name="bottomSheetBackground" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_top_corners</item>
+    </style>-->
+
+</resources>

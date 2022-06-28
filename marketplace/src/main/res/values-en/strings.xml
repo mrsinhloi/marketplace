@@ -1,0 +1,25 @@
+<resources>
+    <string name="mp_no_internet">Please check Internet connection</string>
+    <string name="mp_ok">OK</string>
+    <string name="mp_title">Title</string>
+    <string name="mp_add_photo">Add photo</string>
+    <string name="mp_price_vnd">Price (VNĐ)</string>
+    <string name="mp_acreage">Acreage (m2)</string>
+    <string name="mp_category">Category</string>
+    <string name="mp_select_category">Select category</string>
+    <string name="mp_group">Group</string>
+    <string name="mp_select_group">Select group</string>
+    <string name="mp_address">Address</string>
+    <string name="mp_district">District</string>
+    <string name="mp_select_district">Select district</string>
+    <string name="mp_done">Done</string>
+    <string name="mp_search">Search</string>
+    <string name="mp_cancel">Cancel</string>
+    <string name="mp_province">Province</string>
+    <string name="mp_description">Desciption</string>
+    <string name="mp_description_hint">Description must be at least 100 characters</string>
+    <string name="mp_post">Post</string>
+    <string name="mp_deny_permission">Please grant permission to use this app\n\nTo grant permission go to [Settings] > [Permission]</string>
+    <string name="mp_please_select_image">Please select images</string>
+
+</resources>

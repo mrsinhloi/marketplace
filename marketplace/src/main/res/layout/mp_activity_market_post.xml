@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.MarketPostActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            style="@style/mpToolbarStyle"
+            app:title="@string/mp_post" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:padding="@dimen/mp_padding_start">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/mp_padding_start"
+                android:layout_marginEnd="@dimen/mp_padding_start"
+                android:layout_marginBottom="@dimen/mp_padding_start"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/title"
+                style="@style/mpTextInputLayout"
+                android:hint="@string/mp_title">
+
+                <com.google.android.material.textfield.TextInputEditText style="@style/mpEditTextStyle" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/price"
+                style="@style/mpTextInputLayout"
+                android:hint="@string/mp_price_vnd">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/mpEditTextStyle"
+                    android:inputType="numberDecimal" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/acreage"
+                style="@style/mpTextInputLayout"
+                android:hint="@string/mp_acreage">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/mpEditTextStyle"
+                    android:inputType="numberDecimal"
+                    android:imeOptions="actionDone"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/category"
+                style="@style/mpTextDropdown"
+                android:hint="@string/mp_category">
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/group"
+                style="@style/mpTextDropdown"
+                android:hint="@string/mp_group">
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/address"
+                style="@style/mpTextInputLayout"
+                android:hint="@string/mp_address">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/mpEditTextStyle"
+                    android:inputType="textCapWords"
+                    android:imeOptions="actionDone"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/district"
+                style="@style/mpTextDropdown"
+                android:hint="@string/mp_district">
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/province"
+                style="@style/mpTextDropdown"
+                android:hint="@string/mp_province">
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/description"
+                style="@style/mpTextInputLayout"
+                android:hint="@string/mp_description"
+                app:counterEnabled="true"
+                app:errorEnabled="true"
+                app:helperText="@string/mp_description_hint"
+                app:helperTextEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/mpEditTextStyle"
+                    android:gravity="top"
+                    android:imeOptions="actionDone"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:minLines="4" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnPost"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:layout_margin="@dimen/mp_padding_start"
+                android:text="@string/mp_post"
+                android:textSize="@dimen/mp_text_size"
+                android:backgroundTint="@color/mp_stroke_color"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="320dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+

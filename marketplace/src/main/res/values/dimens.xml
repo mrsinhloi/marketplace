@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mp_corner_radius">8dp</dimen>
+    <dimen name="mp_space_row">8dp</dimen>
+    <dimen name="mp_margin_10dp">10dp</dimen>
+    <dimen name="mp_stroke_width">1dp</dimen>
+
+    <dimen name="mp_padding_start">16dp</dimen>
+    <dimen name="mp_padding_top">8dp</dimen>
+    <dimen name="mp_padding_small">2dp</dimen>
+    <dimen name="mp_dialog_text_size">16sp</dimen>
+    <dimen name="mp_text_size">14sp</dimen>
+
+    <dimen name="mp_photo_height">96dp</dimen>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arr_category">
+        <item>BUY</item>
+        <item>SELL</item>
+        <item>RENT</item>
+    </string-array>
+
+    <string-array name="arr_group">
+        <item>Main Group</item>
+        <item>Dự án</item>
+        <item>Căn hộ</item>
+        <item>Đất nền</item>
+        <item>Nhà phố</item>
+    </string-array>
+
+</resources>
